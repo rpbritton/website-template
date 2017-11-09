@@ -1,0 +1,47 @@
+#sidebar {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	padding: 5% 0;
+	width: var(--sbw);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	overflow-y: scroll;
+	background-color: var(--fg);
+}
+.sidebar-button {
+	display: block;
+	width: var(--sbw);
+	height: var(--sbw);
+	position: relative;
+	overflow: hidden;
+}
+.sidebar-button svg {
+	display: block;
+	padding: calc((var(--sbw) - 24px) / 2);
+	fill: var(--bg);
+	opacity: 0.5;
+	transition: opacity 200ms;
+}
+.sidebar-button:hover svg {
+	opacity: 1;
+}
+
+.sidebar-button::after {
+	content: "";
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: var(--bg);
+	transition: opacity 200ms;
+	opacity: 0;
+}
+
+.sidebar-button:hover::after {
+	opacity: 0.05;
+}

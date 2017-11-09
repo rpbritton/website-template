@@ -1,0 +1,8 @@
+#content {
+	position: absolute;
+	top: 0;
+	left: var(--sbw);
+	width: calc(100% - var(--sbw));
+	height: 100%;
+	background: red;
+}
