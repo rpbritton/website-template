@@ -10,3 +10,8 @@
 		document.body.style.setProperty('--bg-color', `#${materialColors[17][0]}`);
 	}
 }*/
+
+const colors = {
+	'fg': window.getComputedStyle(document.body).getPropertyValue("--fg"),
+	'bg': window.getComputedStyle(document.body).getPropertyValue('--bg')
+};
