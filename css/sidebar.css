@@ -10,6 +10,11 @@
 	justify-content: space-between;
 	overflow-y: scroll;
 	background-color: var(--fg);
+	box-shadow: inset -4px 0 3px -5px var(--bg);
+	/*box-shadow: 0 0 2px var(--fg);*/
+}
+.sidebar-separator {
+	box-shadow: 0 4px 3px -5px var(--bg);
 }
 .sidebar-button {
 	display: block;
@@ -17,10 +22,13 @@
 	height: var(--sbw);
 	position: relative;
 	overflow: hidden;
+	border-radius: 2px;
 }
 .sidebar-button svg {
 	display: block;
-	padding: calc((var(--sbw) - 24px) / 2);
+	height: 20px;
+	width: 20px;
+	padding: calc((var(--sbw) - 20px) / 2);
 	fill: var(--bg);
 	opacity: 0.5;
 	transition: opacity 200ms;
@@ -43,5 +51,5 @@
 }
 
 .sidebar-button:hover::after {
-	opacity: 0.05;
+	opacity: 0.07;
 }
