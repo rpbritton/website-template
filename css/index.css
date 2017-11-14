@@ -1,8 +1,11 @@
-html, body {
-	width: 100%;
-	height: 100%;
-	margin: 0;
+html {
 	--sbw: 48px;
 	--fg: #212121;
 	--bg: #EEEEEE;
+	--fd: #E0E0E0;
+	background-color: var(--fd);
+}
+body {
+	margin: 0 0 0 var(--sbw);
+	height: 100%;
 }

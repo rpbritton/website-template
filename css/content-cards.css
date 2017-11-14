@@ -1,0 +1,7 @@
+.content-cards {
+	display: flex;
+	height: 500px;
+	background-color: var(--bg);
+/*	margin: var(--sbw) var(--sbw) var(--sbw) calc(var(--sbw) * 2);*/
+	margin: var(--sbw);
+}
