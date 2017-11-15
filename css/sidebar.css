@@ -9,14 +9,12 @@
 	flex-direction: column;
 	justify-content: space-between;
 	overflow-y: scroll;
-	background-color: var(--fg);
-	box-shadow: inset -4px 0 3px -5px var(--fd);
-	/*box-shadow: 0 0 2px var(--fg);*/
-	opacity: 0.95;
+	background-color: rgb(var(--fg));
+	box-shadow: inset -4px 0 3px -5px rgb(var(--fd));
 	z-index: 5;
 }
 .sidebar-separator {
-	box-shadow: 0 4px 3px -5px var(--fd);
+	box-shadow: 0 4px 3px -5px rgb(var(--fd));
 }
 .sidebar-button {
 	display: block;
@@ -24,36 +22,16 @@
 	height: var(--sbw);
 	position: relative;
 	overflow: hidden;
-	border-radius: 2px;
+	border-radius: 3px;
 }
 .sidebar-button svg {
 	display: block;
 	height: 20px;
 	width: 20px;
 	padding: calc((var(--sbw) - 20px) / 2);
-	fill: var(--fd);
-	will-change: opacity;
-	opacity: 0.5;
-	transition: opacity 400ms;
+	fill: rgba(var(--fd), 0.5);
+	transition: fill 400ms;
 }
 .sidebar-button:hover svg {
-	opacity: 1;
-}
-
-.sidebar-button::after {
-	content: "";
-	pointer-events: none;
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background-color: var(--fd);
-	will-change: opacity;
-	transition: opacity 400ms;
-	opacity: 0;
-}
-
-.sidebar-button:hover::after {
-	opacity: 0.07;
+	fill: rgb(var(--bg));
 }

@@ -1,9 +1,10 @@
 html {
 	--sbw: 48px;
-	--fg: #212121;
-	--bg: #EEEEEE;
-	--fd: #E0E0E0;
-	background-color: var(--fd);
+	--fg: 33, 33, 33;
+	--bg: 238, 238, 238;
+	--fd: 224, 224, 224;
+	--h: var(fd);
+	background-color: rgb(var(--fd));
 }
 body {
 	margin: 0 0 0 var(--sbw);

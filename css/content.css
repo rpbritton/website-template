@@ -1,18 +1,12 @@
 #content {
-/*	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	margin: auto;
-/*	width: calc(100% - var(--sbw));*/
 	margin: auto;
 	width: 100%;
 	height: 100%;
 	max-width: 2560px;
 	min-width: 640px;
 	min-height: 480px;
-	background-color: var(--fd);
-	box-shadow: 0 0 1px var(--fg);
+	background-color: rgb(var(--fd));
+	box-shadow: 0 0 1px rgb(var(--fg));
 }
 
 .content-section {
