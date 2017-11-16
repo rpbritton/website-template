@@ -8,9 +8,6 @@
 	left: 0;
 	background-color: rgba(var(--fd), 0);
 	transition: background-color 400ms;
-/*	will-change: opacity;
-	transition: opacity 400ms;
-	opacity: 0;*/
 }
 .hover-fade:hover::after {
 /*	opacity: 0.07;*/
