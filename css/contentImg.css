@@ -22,17 +22,16 @@
 }
 .content-img-subtitle {
 	color: rgb(var(--fd));
-	font-family: 'Varela Round', sans-serif;
+	font-family: 'PT Mono', monospace;
 	font-weight: 300;
 	font-size: 18px;
-	text-transform: uppercase;
 }
 .content-img-credit {
 	position: absolute;
 	bottom: 0;
 	right: 0;
 	margin: 30px 40px;
-	font-family: 'Varela Round', sans-serif;
+	font-family: 'PT Mono', monospace;
 	font-size: 12px;
 	font-style: italic;
 	text-decoration: none;

@@ -6,7 +6,7 @@
 	min-width: 640px;
 	min-height: 480px;
 	background-color: rgb(var(--fd));
-	box-shadow: 0 0 1px rgb(var(--fg));
+	box-shadow: 0 2px 3px 1px rgba(var(--fg), 0.3);
 }
 
 .content-section {

@@ -1,4 +1,6 @@
-for (let button of document.getElementsByClassName('hover-fade')) {
-	button.addEventListener('mousedown', function(ev) { inkDropStart(ev, this, this); });
-	button.addEventListener('dragend', function(ev) { inkDropEnd(); });
-}
+const colors = {
+	'fg': window.getComputedStyle(document.body).getPropertyValue('--fg'),
+	'bg': window.getComputedStyle(document.body).getPropertyValue('--bg'),
+	'fd': window.getComputedStyle(document.body).getPropertyValue('--fd'),
+	'l': window.getComputedStyle(document.body).getPropertyValue('--l')
+};

@@ -3,10 +3,15 @@ html {
 	--fg: 33, 33, 33;
 	--bg: 238, 238, 238;
 	--fd: 224, 224, 224;
-	--h: var(fd);
+	--l: 129, 212, 250;
+	--ink-drop: var(--fd);
 	background-color: rgb(var(--fd));
 }
 body {
 	margin: 0 0 0 var(--sbw);
 	height: 100%;
+	color: rgb(var(--fg));
+}
+*::selection {
+	background-color: rgba(var(--l), 0.5);
 }

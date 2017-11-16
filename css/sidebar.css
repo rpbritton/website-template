@@ -10,7 +10,7 @@
 	justify-content: space-between;
 	overflow-y: scroll;
 	background-color: rgb(var(--fg));
-	box-shadow: inset -4px 0 3px -5px rgb(var(--fd));
+	box-shadow: inset -4px 0 3px -5px rgb(var(--fd)), 2px 0 3px 1px rgba(var(--fg), 0.15);
 	z-index: 5;
 }
 .sidebar-separator {

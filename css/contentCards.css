@@ -1,32 +1,69 @@
 .content-cards {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
 	background-color: rgb(var(--bg));
-	margin: calc(var(--sbw) / 2);
-/*	padding: calc(var(--sbw) / 2);*/
+	margin: calc(var(--sbw) * 0.5);
 	border-radius: 3px;
+	box-shadow: 0 2px 3px 1px rgba(var(--fg), 0.02);
+	--card-width: 248px;
+	--card-height: 288px;
+}
+.content-cards-title {
+	--ink-drop: var(--fg);
+	font-family: 'Josefin Slab', serif;
+	font-size: 28px;
+	line-height: var(--sbw);
+	background-color: rgb(var(--bg));
+	color: rgba(var(--fg), 0.8);
+	transition: color 200ms, background-color 400ms;
+/*	padding: calc(var(--sbw) * 0.1) calc(var(--sbw) * 0.4);*/
+	padding: 0 calc(var(--sbw) * 0.25);
+	margin: calc(var(--sbw) * 0.25) calc(var(--sbw) * 0.75) 0 calc(var(--sbw) * 0.75);
+	display: inline-block;
+	text-decoration: none;
+	border-radius: 3px;
+}
+.content-cards:hover .content-cards-title {
+	color: rgb(var(--fg));
+}
+.content-cards-title:hover {
+	background-color: rgba(var(--l), 0.3);
+}
+.content-cards-container {
+	display: flex;
+	flex-flow: row wrap;
+	max-height: calc((var(--card-height) + var(--sbw)) * 2.5);
+	overflow: hidden;
+	transition: max-height 400ms;
+	position: relative;
 }
 .content-cards-card {
-	font-family: 'Josefin Slab', serif;
+	flex-grow: 1;
 	position: relative;
 	border-radius: 3px;
-	margin: calc(var(--sbw) / 2);
-	height: 336px;
-	width: 288px;
+	margin: calc(var(--sbw) * 0.5);
+	width: var(--card-width);
+	height: var(--card-height);
 	overflow: hidden;
+	display: inline-block;
+	box-shadow: 0 2px 3px 1px rgba(var(--fg), 0.15);
 }
-.content-cards-img {
+.content-cards-card-empty {
+	flex-grow: 1;
+	content: '';
+	width: calc(var(--card-width) + var(--sbw));
+}
+.content-cards-card-img {
 	object-fit: cover;
 	width: 100%;
 	height: 100%;
 	display: block;
 	pointer-events: none;
 }
-.content-cards-title {
+.content-cards-card-title {
+	font-family: 'Josefin Slab', serif;
+	font-size: 18px;
 	margin: 0;
+	padding: 12px;
 	text-align: center;
-	line-height: 48px;
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -34,13 +71,27 @@
 	color: rgb(var(--fd));
 	background-color: rgba(var(--h), 0.7);
 }
-.content-cards-price {
+.content-cards-card-price {
+	font-family: 'PT Mono', monospace;
+	font-size: 12px;
 	position: absolute;
 	top: 0;
 	right: 0;
 	margin: 10px;
 	padding: 10px;
 	border-radius: 3px;
-	color: rgb(var(--bg));
+	color: rgba(var(--bg), 0.8);
 	background-color: rgba(var(--h), 0.5);
+}
+.content-cards .expand-section {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	margin-top: calc((var(--card-height) + var(--sbw)) * 2);
+	min-height: calc((var(--card-height) + var(--sbw)) * 0.5);
+	height: calc(100% - (var(--card-height) + var(--sbw)) * 2);
+	box-shadow: inset 0 -200px 200px -100px rgba(var(--bg), 1);
+	transition: box-shadow 400ms;
+	cursor: s-resize;
 }
