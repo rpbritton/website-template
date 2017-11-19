@@ -7,7 +7,7 @@
 	max-height: 1440px;
 	display: flex;
 	align-items: center;
-	background-color: rgb(var(--fd));
+	background-color: rgb(var(--bg));
 }
 .content-text-img {
 	position: absolute;
@@ -21,7 +21,7 @@
 .content-text-content {
 	position: relative;
 	text-align: center;
-	background-color: rgb(var(--bg));
+	background-color: rgba(var(--bg), 0);
 }
 .content-text-content-center {
 	max-width: 80%;

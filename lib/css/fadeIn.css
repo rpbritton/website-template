@@ -1,0 +1,21 @@
+.fade-in-img {
+	opacity: 0;
+	transition: opacity 800ms;
+}
+@keyframes fadeInLeft {
+	from {
+		transform: translateX(-100%);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+.fade-in-left {
+	animation: fadeInLeft 500ms;
+}
+.fade-in-scroll-top {
+	opacity: 0;
+	transform: translateY(-100px);
+	transition: opacity 1000ms, transform 1000ms;
+	pointer-events: none;
+}

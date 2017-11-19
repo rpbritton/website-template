@@ -5,11 +5,15 @@
 	max-width: 2560px;
 	min-width: 640px;
 	min-height: 480px;
-	background-color: rgb(var(--fd));
+	background-color: rgb(var(--bg));
 	box-shadow: 0 2px 3px 1px rgba(var(--fg), 0.3);
 }
 
 .content-section {
 	position: relative;
-	margin-bottom: calc(var(--sbw) / 2);
+}
+.content-separator {
+	width: 100%;
+	height: calc(var(--sbw) / 2);
+	position: relative;
 }
