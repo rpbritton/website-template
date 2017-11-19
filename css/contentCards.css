@@ -1,6 +1,7 @@
 .content-cards {
 	background-color: rgb(var(--bg));
-	margin: calc(var(--sbw) * 0.5);
+	margin-left: calc(var(--sbw) * 0.5);
+	margin-right: calc(var(--sbw) * 0.5);
 	border-radius: 3px;
 	box-shadow: 0 2px 3px 1px rgba(var(--fg), 0.02);
 	--card-width: 248px;
@@ -43,7 +44,11 @@
 	display: block;
 	width: var(--sbw);
 	height: var(--sbw);
+	transition: fill 400ms;
 	fill: rgba(var(--fg), 0.8);
+}
+.content-cards-slide-nav:hover svg {
+	fill: rgb(var(--fg));
 }
 .content-cards-slide-right {
 	margin-right: calc(var(--sbw) * 0.5);
