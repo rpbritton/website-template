@@ -7,7 +7,7 @@
 
 	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/content.css">
-	<link rel="stylesheet" href="css/contentImg.css">
+	<link rel="stylesheet" href="css/contentText.css">
 	<link rel="stylesheet" href="css/contentCards.css">
 	<link rel="stylesheet" href="css/sidebar.css">
 </head>
@@ -75,14 +75,13 @@
 		</div>
 	</div>
 	<div id="content">
-		<div class="content-section content-img">
-			<img class="content-img-bg" src="https://images.unsplash.com/photo-1496264057429-6a331647b69e?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=f8a9c8429a6b775b00d6103eaf01eabb">
-			<div class="content-img-content-center">
-				<h1 class="content-img-title">Lorem ipsum</h1>
-				<p class="content-img-paragraph">dolor sit amet, consectetur adipiscing elit</p>
-				<a class="content-img-button hover-fade add-ink-drop" href="javascript:void(0)">Quis autem vel</a>
+		<div class="content-section content-text" style="--h: 184, 89, 90">
+			<img class="content-text-img" src="https://images.unsplash.com/photo-1496264057429-6a331647b69e?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=f8a9c8429a6b775b00d6103eaf01eabb">
+			<div class="content-text-content content-text-content-center" style="--tc: var(--bg); background-color: rgba(var(--bg), 0)">
+				<h1 class="content-text-title">Lorem ipsum</h1>
+				<a class="content-text-button hover-fade add-ink-drop" href="javascript:void(0)">Quis autem vel</a>
 			</div>
-			<a class="content-img-credit" href="https://unsplash.com/photos/8zMIksrTrOQ">Photo by Ryan Holloway on Unsplash</a>
+			<a class="content-text-img-credit" href="https://unsplash.com/photos/8zMIksrTrOQ">Photo by Ryan Holloway on Unsplash</a>
 		</div>
 		<div class="content-section content-cards">
 			<a class="content-cards-title add-ink-drop" href="javascript:void(0)">Ut enim ad minim veniam</a>
@@ -158,13 +157,105 @@
 				<div class="expand-section"></div>
 			</div>
 		</div>
-		<div class="content-section content-img">
-			<img class="content-img-bg" style="filter: brightness(50%)" src="https://images.unsplash.com/photo-1435783099294-283725c37230?auto=format&fit=crop&w=1400&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
-			<div class="content-img-content-right">
-				<h2 class="content-img-subtitle">Sed ut perspiciatis</h2>
-				<p class="content-img-paragraph">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<div class="content-section content-text">
+			<img class="content-text-img" style="filter: brightness(50%)" src="https://images.unsplash.com/photo-1435783099294-283725c37230?auto=format&fit=crop&w=1400&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
+			<div class="content-text-content content-text-content-right" style="--tc: var(--bg); background-color: rgba(var(--bg), 0)">
+				<h2 class="content-text-subtitle">Sed ut perspiciatis</h2>
+				<p class="content-text-paragraph">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			</div>
-			<a class="content-img-credit" href="https://unsplash.com/photos/3Z70SDuYs5g">Photo by Luca Bravo on Unsplash</a>
+			<a class="content-text-img-credit" href="https://unsplash.com/photos/3Z70SDuYs5g">Photo by Luca Bravo on Unsplash</a>
+		</div>
+		<div class="content-section content-text" style="height: auto; max-height: none; min-height: 0">
+			<div class="content-text-content content-text-content-center">
+				<h2 class="content-text-subtitle">At vero eos et accusamus</h2>
+				<p class="content-text-paragraph">et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
+			</div>
+		</div>
+		<div class="content-section content-cards">
+			<a class="content-cards-title hover-fade add-ink-drop" href="javascript:void(0)">Ut enim ad minim veniam</a>
+			<a class="content-cards-slide-nav content-cards-slide-right add-ink-drop" href="javascript:void(0)">
+				<svg viewBox="0 0 24 24">
+					<path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+					<path d="M0 0h24v24H0z" fill="none"/>
+				</svg>
+			</a>
+			<a class="content-cards-slide-nav content-cards-slide-left add-ink-drop" href="javascript:void(0)">
+				<svg viewBox="0 0 24 24">
+					<path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+					<path d="M0 0h24v24H0z" fill="none"/>
+				</svg>
+			</a>
+			<div class="content-cards-slide-container">
+				<a class="content-cards-card hover-fade add-ink-drop" style="--h: 44, 70, 67" href="javascript:void(0)">
+					<img class="content-cards-card-img" src="https://images.unsplash.com/photo-1498854724603-94249fe17bcd?auto=format&fit=crop&w=334&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
+					<h4 class="content-cards-card-price">$5.99</h4>
+					<h3 class="content-cards-card-title">consectetur adipiscing elit</h3>
+				</a>
+				<a class="content-cards-card hover-fade add-ink-drop" style="--h: 123, 119, 98" href="javascript:void(0)">
+					<img class="content-cards-card-img" src="https://images.unsplash.com/photo-1489693755295-4a1efc9e7f72?auto=format&fit=crop&w=889&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
+					<h4 class="content-cards-card-price">$90.84</h4>
+					<h3 class="content-cards-card-title">ed do eiusmod tempor incididunt</h3>
+				</a>
+				<a class="content-cards-card hover-fade add-ink-drop" style="--h: 191, 140, 70" href="javascript:void(0)">
+					<img class="content-cards-card-img" src="https://images.unsplash.com/photo-1480699262308-9fefabb9abe5?auto=format&fit=crop&w=751&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
+					<h4 class="content-cards-card-price">$895.00</h4>
+					<h3 class="content-cards-card-title">magna aliqua</h3>
+				</a>
+				<a class="content-cards-card hover-fade add-ink-drop" style="--h: 178, 187, 201" href="javascript:void(0)">
+					<img class="content-cards-card-img" src="https://images.unsplash.com/photo-1486081873659-dce3f2128c58?auto=format&fit=crop&w=889&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
+					<h4 class="content-cards-card-price">$0.54</h4>
+					<h3 class="content-cards-card-title">ut labore et dolore</h3>
+				</a>
+				<a class="content-cards-card hover-fade add-ink-drop" style="--h: 44, 70, 67" href="javascript:void(0)">
+					<img class="content-cards-card-img" src="https://images.unsplash.com/photo-1498854724603-94249fe17bcd?auto=format&fit=crop&w=334&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
+					<h4 class="content-cards-card-price">$5.99</h4>
+					<h3 class="content-cards-card-title">consectetur adipiscing elit</h3>
+				</a>
+				<a class="content-cards-card hover-fade add-ink-drop" style="--h: 178, 187, 201" href="javascript:void(0)">
+					<img class="content-cards-card-img" src="https://images.unsplash.com/photo-1486081873659-dce3f2128c58?auto=format&fit=crop&w=889&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
+					<h4 class="content-cards-card-price">$0.54</h4>
+					<h3 class="content-cards-card-title">ut labore et dolore</h3>
+				</a>
+				<a class="content-cards-card hover-fade add-ink-drop" style="--h: 191, 140, 70" href="javascript:void(0)">
+					<img class="content-cards-card-img" src="https://images.unsplash.com/photo-1480699262308-9fefabb9abe5?auto=format&fit=crop&w=751&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
+					<h4 class="content-cards-card-price">$895.00</h4>
+					<h3 class="content-cards-card-title">magna aliqua</h3>
+				</a>
+				<a class="content-cards-card hover-fade add-ink-drop" style="--h: 44, 70, 67" href="javascript:void(0)">
+					<img class="content-cards-card-img" src="https://images.unsplash.com/photo-1498854724603-94249fe17bcd?auto=format&fit=crop&w=334&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
+					<h4 class="content-cards-card-price">$5.99</h4>
+					<h3 class="content-cards-card-title">consectetur adipiscing elit</h3>
+				</a>
+				<a class="content-cards-card hover-fade add-ink-drop" style="--h: 123, 119, 98" href="javascript:void(0)">
+					<img class="content-cards-card-img" src="https://images.unsplash.com/photo-1489693755295-4a1efc9e7f72?auto=format&fit=crop&w=889&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
+					<h4 class="content-cards-card-price">$90.84</h4>
+					<h3 class="content-cards-card-title">ed do eiusmod tempor incididunt</h3>
+				</a>
+				<a class="content-cards-card hover-fade add-ink-drop" style="--h: 123, 119, 98" href="javascript:void(0)">
+					<img class="content-cards-card-img" src="https://images.unsplash.com/photo-1489693755295-4a1efc9e7f72?auto=format&fit=crop&w=889&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
+					<h4 class="content-cards-card-price">$90.84</h4>
+					<h3 class="content-cards-card-title">ed do eiusmod tempor incididunt</h3>
+				</a>
+				<a class="content-cards-card hover-fade add-ink-drop" style="--h: 191, 140, 70" href="javascript:void(0)">
+					<img class="content-cards-card-img" src="https://images.unsplash.com/photo-1480699262308-9fefabb9abe5?auto=format&fit=crop&w=751&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
+					<h4 class="content-cards-card-price">$895.00</h4>
+					<h3 class="content-cards-card-title">magna aliqua</h3>
+				</a>
+				<a class="content-cards-card hover-fade add-ink-drop" style="--h: 178, 187, 201" href="javascript:void(0)">
+					<img class="content-cards-card-img" src="https://images.unsplash.com/photo-1486081873659-dce3f2128c58?auto=format&fit=crop&w=889&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
+					<h4 class="content-cards-card-price">$0.54</h4>
+					<h3 class="content-cards-card-title">ut labore et dolore</h3>
+				</a>
+				<div class="content-cards-card-empty"></div>
+				<div class="content-cards-card-empty"></div>
+				<div class="content-cards-card-empty"></div>
+				<div class="content-cards-card-empty"></div>
+				<div class="content-cards-card-empty"></div>
+				<div class="content-cards-card-empty"></div>
+				<div class="content-cards-card-empty"></div>
+				<div class="content-cards-card-empty"></div>
+				<!--<div class="expand-section"></div>-->
+			</div>
 		</div>
 	</div>
 </body>
@@ -172,6 +263,7 @@
 <!--<script src="lib/js/colors.js"></script>-->
 <script src="lib/js/inkDrop.js"></script>
 <script src="lib/js/expandSection.js"></script>
+<script src="lib/js/slideSection.js"></script>
 
 <script src="js/index.js"></script>
 </html>

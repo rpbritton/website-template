@@ -27,6 +27,27 @@
 .content-cards-title:hover {
 	background-color: rgba(var(--l), 0.3);
 }
+.content-cards-slide-nav {
+	--ink-drop: var(--fg);
+	margin-top: calc(var(--sbw) * 0.25);
+	display: inline-block;
+	float: right;
+	border-radius: 50%;
+	transition: background-color 400ms;
+	background-color: rgba(var(--ink-drop), 0);
+}
+.content-cards-slide-nav:hover {
+	background-color: rgba(var(--ink-drop), 0.07);
+}
+.content-cards-slide-nav svg {
+	display: block;
+	width: var(--sbw);
+	height: var(--sbw);
+	fill: rgba(var(--fg), 0.8);
+}
+.content-cards-slide-right {
+	margin-right: calc(var(--sbw) * 0.5);
+}
 .content-cards-container {
 	display: flex;
 	flex-flow: row wrap;
@@ -34,6 +55,14 @@
 	overflow: hidden;
 	transition: max-height 400ms;
 	position: relative;
+}
+.content-cards-slide-container {
+	display: flex;
+	flex-flow: row wrap;
+	height: calc(var(--card-height) + var(--sbw));
+	overflow: hidden;
+	position: relative;
+/*	scroll-behavior: smooth;*/
 }
 .content-cards-card {
 	flex-grow: 1;

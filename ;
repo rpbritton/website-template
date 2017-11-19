@@ -1,0 +1,26 @@
+for (let left of document.getElementsByClassName('content-cards-slide-left')) {
+	left.addEventListener('click', function(ev) {
+		scrollSection(container, container.clientHeight*-1);
+	});
+}
+for (let right of document.getElementsByClassName('content-cards-slide-right')) {
+	var container = right.parentElement.getElementsByClassName('content-cards-slide-container')[0]
+	right.addEventListener('click', function(ev) {
+		scrollSection(container, container.clientHeight);
+	});
+}
+function scrollSection(el, amount, options = {'position': 0, 'speed': 2000, 'quality': 0.1}) {
+	let total = 0;
+	let interval = setInterval(() => {
+		console.log('here');
+		if (options.position > 1) {
+			clearInterval(interval);
+			console.log(total);
+		}
+		else {
+			el.scrollTop += (Math.cos(Math.PI*options.position)+1)/2*amount+-(Math.cos(Math.PI*options.position)+1)/2*amount;
+			total += ((Math.cos(Math.PI*options.position)+1)/2);
+			options.position += options.quality;
+		}
+	}, options.speed*options.quality);
+}
