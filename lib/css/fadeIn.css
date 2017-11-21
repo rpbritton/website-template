@@ -1,7 +1,3 @@
-.fade-in-img {
-	opacity: 0;
-	transition: opacity 800ms;
-}
 @keyframes fadeInLeft {
 	from {
 		transform: translateX(-100%);

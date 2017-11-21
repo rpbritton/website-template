@@ -7,7 +7,7 @@
 	border-radius: 50%;
 	position: absolute;
 /*	transform: scale(0);*/
-	background-color: rgba(var(--ink-drop), 0.07);
+	background-color: rgba(var(--overlay-color), 0.07);
 /*	transition: transform 700ms cubic-bezier(0.2,0.9,0.2,0.9), background-color 400ms;*/
 	transition: height 700ms cubic-bezier(0.2,0.9,0.2,0.9), width 700ms cubic-bezier(0.2,0.9,0.2,0.9), background-color 700ms;
 	height: 0px;
@@ -15,5 +15,5 @@
 	transform: translate(-50%, -50%);
 }
 .ink-drop-off {
-	background-color: rgba(var(--ink-drop), 0);
+	background-color: rgba(var(--overlay-color), 0);
 }

@@ -6,7 +6,7 @@
 	min-width: 640px;
 	min-height: 480px;
 	background-color: rgb(var(--bg));
-	box-shadow: 0 2px 3px 1px rgba(var(--fg), 0.3);
+	box-shadow: 0 2px 3px 1px rgba(var(--fg), 0.4);
 }
 .content-section {
 	position: relative;

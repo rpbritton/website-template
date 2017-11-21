@@ -23,6 +23,11 @@
 	position: relative;
 	overflow: hidden;
 	border-radius: 3px;
+	transition: background-color 400ms;
+	--overlay-color: var(--bg);
+}
+.sidebar-button:hover {
+	background-color: rgba(var(--bg), 0.07);
 }
 .sidebar-button svg {
 	display: block;
