@@ -1,0 +1,22 @@
+.content-footer {
+	--text-color: var(--faded-color);
+	background-color: rgba(var(--foreground-color), 0.9);
+	text-align: center;
+	padding: calc(var(--unit) * 0.7);
+	box-shadow: inset 0 0 100px -25px rgb(var(--foreground-color));
+}
+.content-footer-text {
+	color: rgba(var(--faded-color), 0.6);
+}
+.content-footer-link {
+	text-decoration: none;
+	background-color: (var(--foreground-color), 0);
+}
+.content-footer-link:hover {
+	color: rgb(var(--background-color));
+	background-color: (var(--foreground-color), 0);
+}
+.content-footer-separator {
+	color: rgba(var(--faded-color), 0.6);
+	padding: 0 calc(var(--unit) * 0.25);
+}

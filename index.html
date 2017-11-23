@@ -3,13 +3,14 @@
 <head>
 	<link rel="stylesheet" href="lib/css/hoverFade.css">
 	<link rel="stylesheet" href="lib/css/inkDrop.css">
-	<link rel="stylesheet" href="lib/css/fadeIn.css">
-	<link href="https://fonts.googleapis.com/css?family=Josefin+Slab:300|PT+Mono|Josefin+Sans:300" rel="stylesheet">
+	<link rel="stylesheet" href="lib/css/fadeScroll.css">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Slab|PT+Mono|Josefin+Sans:300" rel="stylesheet">
 
 	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/content.css">
 	<link rel="stylesheet" href="css/contentText.css">
 	<link rel="stylesheet" href="css/contentCards.css">
+	<link rel="stylesheet" href="css/contentFooter.css">
 	<link rel="stylesheet" href="css/sidebar.css">
 </head>
 
@@ -76,38 +77,88 @@
 		</div>
 	</div>
 	<div id="content">
-		<div class="content-section content-text" style="--highlight-color: 184, 89, 90;">
-			<img class="content-text-img-bg" alt="https://images.unsplash.com/photo-1496264057429-6a331647b69e?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=f8a9c8429a6b775b00d6103eaf01eabb">
-			<div class="content-text-content fade-in-scroll-top" style="--tc: var(--bg); text-align: center;">
-				<h1>Lorem ipsum</h1>
+		<div class="content-section content-text content-text-w-bg-img" style="--highlight-color: 184, 89, 90;">
+			<img class="content-text-bg-img" alt="https://images.unsplash.com/photo-1496264057429-6a331647b69e?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=f8a9c8429a6b775b00d6103eaf01eabb">
+			<div class="content-text-content fade-in-scroll" style="text-align: center;">
+				<h1 style="font-size: 4em">Lorem ipsum</h1>
 				<a class="button hover-fade add-ink-drop" href="javascript:void(0)">Quis autem vel</a>
 			</div>
 			<a class="content-text-img-bg-credit" href="https://unsplash.com/photos/8zMIksrTrOQ">Photo by Ryan Holloway on Unsplash</a>
 		</div>
-		<div class="content-section content-cards fade-in-scroll-top">
+		<div class="content-section content-cards fade-in-scroll">
 			<div class="content-cards-top">
 				<h2><a class="add-ink-drop" href="javascript:void(0)">Ut enim ad minim veniam</a></h2>
 			</div>
 			<div class="content-cards-container">
 				<a class="content-cards-card hover-fade add-ink-drop" style="--highlight-color: 44, 70, 67" href="javascript:void(0)">
 					<img alt="https://images.unsplash.com/photo-1498854724603-94249fe17bcd?auto=format&fit=crop&w=334&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
-					<h5>$5.99</h5>
-					<h4>consectetur adipiscing elit</h4>
+					<h4>$5.99</h4>
+					<p>consectetur adipiscing elit</p>
 				</a>
 				<a class="content-cards-card hover-fade add-ink-drop" style="--highlight-color: 123, 119, 98" href="javascript:void(0)">
 					<img alt="https://images.unsplash.com/photo-1489693755295-4a1efc9e7f72?auto=format&fit=crop&w=889&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
-					<h5>$90.84</h5>
-					<h4>ed do eiusmod tempor incididunt</h4>
+					<h4>$90.84</h4>
+					<p>ed do eiusmod tempor incididunt</p>
+				</a>
+				<a class="content-cards-card hover-fade add-ink-drop" style="--highlight-color: 44, 70, 67" href="javascript:void(0)">
+					<img alt="https://images.unsplash.com/photo-1498854724603-94249fe17bcd?auto=format&fit=crop&w=334&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
+					<h4>$5.99</h4>
+					<p>consectetur adipiscing elit</p>
 				</a>
 				<a class="content-cards-card hover-fade add-ink-drop" style="--highlight-color: 191, 140, 70" href="javascript:void(0)">
 					<img alt="https://images.unsplash.com/photo-1480699262308-9fefabb9abe5?auto=format&fit=crop&w=751&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
-					<h5>$895.00</h5>
-					<h4>magna aliqua</h4>
+					<h4>$895.00</h4>
+					<p>magna aliqua</p>
+				</a>
+				<a class="content-cards-card hover-fade add-ink-drop" style="--highlight-color: 123, 119, 98" href="javascript:void(0)">
+					<img alt="https://images.unsplash.com/photo-1489693755295-4a1efc9e7f72?auto=format&fit=crop&w=889&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
+					<h4>$90.84</h4>
+					<p>ed do eiusmod tempor incididunt</p>
 				</a>
 				<a class="content-cards-card hover-fade add-ink-drop" style="--highlight-color: 178, 187, 201" href="javascript:void(0)">
 					<img alt="https://images.unsplash.com/photo-1486081873659-dce3f2128c58?auto=format&fit=crop&w=889&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
-					<h5>$0.54</h5>
-					<h4>ut labore et dolore</h4>
+					<h4>$0.54</h4>
+					<p>ut labore et dolore</p>
+				</a>
+				<a class="content-cards-card hover-fade add-ink-drop" style="--highlight-color: 123, 119, 98" href="javascript:void(0)">
+					<img alt="https://images.unsplash.com/photo-1489693755295-4a1efc9e7f72?auto=format&fit=crop&w=889&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
+					<h4>$90.84</h4>
+					<p>ed do eiusmod tempor incididunt</p>
+				</a>
+				<a class="content-cards-card hover-fade add-ink-drop" style="--highlight-color: 191, 140, 70" href="javascript:void(0)">
+					<img alt="https://images.unsplash.com/photo-1480699262308-9fefabb9abe5?auto=format&fit=crop&w=751&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
+					<h4>$895.00</h4>
+					<p>magna aliqua</p>
+				</a>
+				<a class="content-cards-card hover-fade add-ink-drop" style="--highlight-color: 191, 140, 70" href="javascript:void(0)">
+					<img alt="https://images.unsplash.com/photo-1480699262308-9fefabb9abe5?auto=format&fit=crop&w=751&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
+					<h4>$895.00</h4>
+					<p>magna aliqua</p>
+				</a>
+				<a class="content-cards-card hover-fade add-ink-drop" style="--highlight-color: 178, 187, 201" href="javascript:void(0)">
+					<img alt="https://images.unsplash.com/photo-1486081873659-dce3f2128c58?auto=format&fit=crop&w=889&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
+					<h4>$0.54</h4>
+					<p>ut labore et dolore</p>
+				</a>
+				<a class="content-cards-card hover-fade add-ink-drop" style="--highlight-color: 44, 70, 67" href="javascript:void(0)">
+					<img alt="https://images.unsplash.com/photo-1498854724603-94249fe17bcd?auto=format&fit=crop&w=334&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
+					<h4>$5.99</h4>
+					<p>consectetur adipiscing elit</p>
+				</a>
+				<a class="content-cards-card hover-fade add-ink-drop" style="--highlight-color: 44, 70, 67" href="javascript:void(0)">
+					<img alt="https://images.unsplash.com/photo-1498854724603-94249fe17bcd?auto=format&fit=crop&w=334&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
+					<h4>$5.99</h4>
+					<p>consectetur adipiscing elit</p>
+				</a>
+				<a class="content-cards-card hover-fade add-ink-drop" style="--highlight-color: 178, 187, 201" href="javascript:void(0)">
+					<img alt="https://images.unsplash.com/photo-1486081873659-dce3f2128c58?auto=format&fit=crop&w=889&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
+					<h4>$0.54</h4>
+					<p>ut labore et dolore</p>
+				</a>
+				<a class="content-cards-card hover-fade add-ink-drop" style="--highlight-color: 123, 119, 98" href="javascript:void(0)">
+					<img alt="https://images.unsplash.com/photo-1489693755295-4a1efc9e7f72?auto=format&fit=crop&w=889&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
+					<h4>$90.84</h4>
+					<p>ed do eiusmod tempor incididunt</p>
 				</a>
 				<div class="content-cards-card-empty"></div>
 				<div class="content-cards-card-empty"></div>
@@ -120,21 +171,67 @@
 				<div class="expand-section"></div>
 			</div>
 		</div>
-		<div class="content-section content-text">
-			<img class="content-text-img-bg" style="filter: brightness(50%)" alt="https://images.unsplash.com/photo-1435783099294-283725c37230?auto=format&fit=crop&w=1400&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
-			<div class="content-text-content fade-in-scroll-top" style="margin-left: auto; margin-right: var(--sbw); width: 50%; --tc: var(--bg)">
-				<h2 style="text-align: center">Sed ut perspiciatis</h2>
-				<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<div class="content-section content-text content-text-w-bg-img">
+			<img class="content-text-bg-img" style="filter: brightness(50%)" alt="https://images.unsplash.com/photo-1435783099294-283725c37230?auto=format&fit=crop&w=1400&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
+			<div class="content-text-content content-text-content-right fade-in-scroll">
+				<!--<h2 style="text-align: center">Sed ut perspiciatis</h2>
+				<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>-->
+				<h2>Residens exspatiata vatum praeteritae venit implesset curvare</h2>
+				<p>Adapertaque vultus, sui vires, plurimus disicit fatetur qui oraque desistere in
+				paulatim <a href="http://nitido.com/">saecula</a> adventu ora Licha! Lento fontis: ut ille
+				pennae <em>fauces</em>, vidit clamoribus numina iterum inpetus nescius paternos. Ire
+				dixit vix qua me? Est desertaque tamquam taurus Salmacis mergit <strong>iste
+					flammaeque tamen</strong> dulcedine pectora ponunt; Phoebus omnis: quam sacra nocturnos
+				silva.</p>
+				<p>Tale quodsi. Erit <strong>talia crinibus muneris</strong> nec abit dolores donec est scire!
+				Magno ibi amante nullae in sinitis inquit ex dextra,
+				<a href="http://www.quae.com/carerent-posuisse">faventum</a> electra superstitibus creatus
+				triformis videbis mons mirabile rupit. Eadem cera, silices colatur, revirescere
+				quodque nostri ut iamque Ossae; in possent posse! Sustineam quamque: nam te
+				certamen minata Bacchi et turribus.</p>
 			</div>
 			<a class="content-text-img-bg-credit" href="https://unsplash.com/photos/3Z70SDuYs5g">Photo by Luca Bravo on Unsplash</a>
 		</div>
-		<div class="content-section content-text" style="height: auto; max-height: none; min-height: 0">
-			<div class="content-text-content content-text-content-center fade-in-scroll-top">
-				<h2>At vero eos et accusamus</h2>
-				<p>et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
+		<div class="content-section content-text">
+			<div class="content-text-content fade-in-scroll">
+				<h1>Servat cursu artus est potestas claudit</h1>
+				<h2>Ego est quos numina subiti crista Aeoliique</h2>
+				<p><strong>Lorem markdownum</strong> paventque infracto victoris se latet pondus sunt erat
+				liceat, Anchisae e adsere duabus; mero soceri credere. Carebat Ulixes monet
+				sororis! Gemelliparae adhuc, florentis per visa aera quid dicebat celat,
+				concubitus et et amorem.</p>
+				<ul>
+					<li>Posses ore cognomine servat evehor sessile</li>
+					<li>Quid vos et quem interea sinus</li>
+					<li>Defectos non poena</li>
+					<li>Hoc movet inmittitur tororum</li>
+					<li>Tenebat dixit tollere</li>
+				</ul>
+				<h2>Sed fundatis adice</h2>
+				<p>Oris factis de adhuc; <strong>Dixerat</strong>, horrida rigore cum. Munitos tosta rostro,
+				ipsaque concresse; communis deus <strong>generis</strong>; undecimus inpositum me manus: non
+				tota tempora. Plausit quoque Oeten amantem terrae tria leto virisque ferus, ait
+				Tarentum eques vitale bracchia sub haut, arvaque. Toto lata patetis fraterno
+				reddat robore in iacent et detis carpserat.</p>
+				<blockquote>
+					  <p>Avem simul nunc, lacrimas. Vestis sit totidem nitidos rubentem positis, et
+					    sunt frequentes contra, corpora, quid.</p>
+				</blockquote>
+				<h2>Stipite videre venerat qua sed</h2>
+				<p>Ibimus et arbitrium mare voles, corpore rore ad panda laetabile solebam parentem
+				tenera sub pietas illius. Exosus <a href="http://omnia.com/ora-steterat.aspx">summa visa
+					dictaque</a> maximus admotis, me hoc umoribus
+				pendere <strong>ostendens</strong> Ereboque ut suprema limbus.</p>
+				<p><em>Sigeia</em> est fixus paterni torsit! Inque oris Anthedone fallacia me soceri
+				pressum nec ratos Ide potitus gurgite flumina, primo est! <a href="http://nobis.org/socer">Cura
+					Caenis</a> est moderatus meroque idem cum, gaudere corrige.
+				Urbe finemque munera caput custodia victoris sis simul barbarus cornua
+				circumspexit verbaque te obvia. Miserere meris annis vocatur et aderant super,
+				longos: in deinde ranae, multi.</p>
 			</div>
 		</div>
-		<div class="content-section content-cards fade-in-scroll-top">
+		<div class="content-separator"></div>
+		<div class="content-section content-cards fade-in-scroll">
 			<div class="content-cards-top">
 				<h2><a class="add-ink-drop" href="javascript:void(0)">Ut enim ad minim veniam</a></h2>
 				<a class="content-cards-slide-nav content-cards-slide-left add-ink-drop" href="javascript:void(0)">
@@ -151,16 +248,99 @@
 				</a>
 			</div>
 			<div class="content-cards-slide-container">
-				<div class="content-cards-card-empty"></div>
-				<div class="content-cards-card-empty"></div>
-				<div class="content-cards-card-empty"></div>
-				<div class="content-cards-card-empty"></div>
-				<div class="content-cards-card-empty"></div>
-				<div class="content-cards-card-empty"></div>
-				<div class="content-cards-card-empty"></div>
-				<div class="content-cards-card-empty"></div>
+				<div class="content-cards-slide-overflow">
+				<a class="content-cards-card hover-fade add-ink-drop" style="--highlight-color: 44, 70, 67" href="javascript:void(0)">
+					<img alt="https://images.unsplash.com/photo-1498854724603-94249fe17bcd?auto=format&fit=crop&w=334&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
+					<h4>$5.99</h4>
+					<p>consectetur adipiscing elit</p>
+				</a>
+				<a class="content-cards-card hover-fade add-ink-drop" style="--highlight-color: 123, 119, 98" href="javascript:void(0)">
+					<img alt="https://images.unsplash.com/photo-1489693755295-4a1efc9e7f72?auto=format&fit=crop&w=889&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
+					<h4>$90.84</h4>
+					<p>ed do eiusmod tempor incididunt</p>
+				</a>
+				<a class="content-cards-card hover-fade add-ink-drop" style="--highlight-color: 44, 70, 67" href="javascript:void(0)">
+					<img alt="https://images.unsplash.com/photo-1498854724603-94249fe17bcd?auto=format&fit=crop&w=334&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
+					<h4>$5.99</h4>
+					<p>consectetur adipiscing elit</p>
+				</a>
+				<a class="content-cards-card hover-fade add-ink-drop" style="--highlight-color: 191, 140, 70" href="javascript:void(0)">
+					<img alt="https://images.unsplash.com/photo-1480699262308-9fefabb9abe5?auto=format&fit=crop&w=751&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
+					<h4>$895.00</h4>
+					<p>magna aliqua</p>
+				</a>
+				<a class="content-cards-card hover-fade add-ink-drop" style="--highlight-color: 123, 119, 98" href="javascript:void(0)">
+					<img alt="https://images.unsplash.com/photo-1489693755295-4a1efc9e7f72?auto=format&fit=crop&w=889&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
+					<h4>$90.84</h4>
+					<p>ed do eiusmod tempor incididunt</p>
+				</a>
+				<a class="content-cards-card hover-fade add-ink-drop" style="--highlight-color: 178, 187, 201" href="javascript:void(0)">
+					<img alt="https://images.unsplash.com/photo-1486081873659-dce3f2128c58?auto=format&fit=crop&w=889&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
+					<h4>$0.54</h4>
+					<p>ut labore et dolore</p>
+				</a>
+				<a class="content-cards-card hover-fade add-ink-drop" style="--highlight-color: 123, 119, 98" href="javascript:void(0)">
+					<img alt="https://images.unsplash.com/photo-1489693755295-4a1efc9e7f72?auto=format&fit=crop&w=889&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
+					<h4>$90.84</h4>
+					<p>ed do eiusmod tempor incididunt</p>
+				</a>
+				<a class="content-cards-card hover-fade add-ink-drop" style="--highlight-color: 191, 140, 70" href="javascript:void(0)">
+					<img alt="https://images.unsplash.com/photo-1480699262308-9fefabb9abe5?auto=format&fit=crop&w=751&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
+					<h4>$895.00</h4>
+					<p>magna aliqua</p>
+				</a>
+				<a class="content-cards-card hover-fade add-ink-drop" style="--highlight-color: 191, 140, 70" href="javascript:void(0)">
+					<img alt="https://images.unsplash.com/photo-1480699262308-9fefabb9abe5?auto=format&fit=crop&w=751&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
+					<h4>$895.00</h4>
+					<p>magna aliqua</p>
+				</a>
+				<a class="content-cards-card hover-fade add-ink-drop" style="--highlight-color: 178, 187, 201" href="javascript:void(0)">
+					<img alt="https://images.unsplash.com/photo-1486081873659-dce3f2128c58?auto=format&fit=crop&w=889&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
+					<h4>$0.54</h4>
+					<p>ut labore et dolore</p>
+				</a>
+				<a class="content-cards-card hover-fade add-ink-drop" style="--highlight-color: 44, 70, 67" href="javascript:void(0)">
+					<img alt="https://images.unsplash.com/photo-1498854724603-94249fe17bcd?auto=format&fit=crop&w=334&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
+					<h4>$5.99</h4>
+					<p>consectetur adipiscing elit</p>
+				</a>
+				<a class="content-cards-card hover-fade add-ink-drop" style="--highlight-color: 44, 70, 67" href="javascript:void(0)">
+					<img alt="https://images.unsplash.com/photo-1498854724603-94249fe17bcd?auto=format&fit=crop&w=334&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
+					<h4>$5.99</h4>
+					<p>consectetur adipiscing elit</p>
+				</a>
+				<a class="content-cards-card hover-fade add-ink-drop" style="--highlight-color: 178, 187, 201" href="javascript:void(0)">
+					<img alt="https://images.unsplash.com/photo-1486081873659-dce3f2128c58?auto=format&fit=crop&w=889&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
+					<h4>$0.54</h4>
+					<p>ut labore et dolore</p>
+				</a>
+				<a class="content-cards-card hover-fade add-ink-drop" style="--highlight-color: 123, 119, 98" href="javascript:void(0)">
+					<img alt="https://images.unsplash.com/photo-1489693755295-4a1efc9e7f72?auto=format&fit=crop&w=889&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
+					<h4>$90.84</h4>
+					<p>ed do eiusmod tempor incididunt</p>
+				</a>
+					<div class="content-cards-card-empty"></div>
+					<div class="content-cards-card-empty"></div>
+					<div class="content-cards-card-empty"></div>
+					<div class="content-cards-card-empty"></div>
+					<div class="content-cards-card-empty"></div>
+					<div class="content-cards-card-empty"></div>
+					<div class="content-cards-card-empty"></div>
+					<div class="content-cards-card-empty"></div>
+				</div>
 			</div>
 		</div>
+		<footer class="content-section content-footer">
+			<span class="content-footer-text">impedit quo minus © 2017</span>
+			<span class="content-footer-separator">|</span>
+			<a class="content-footer-link" href="javascript:void(0)">about</a>
+			<span class="content-footer-separator">|</span>
+			<a class="content-footer-link" href="javascript:void(0)">privacy</a>
+			<span class="content-footer-separator">|</span>
+			<a class="content-footer-link" href="javascript:void(0)">terms</a>
+			<span class="content-footer-separator">|</span>
+			<a class="content-footer-link" href="javascript:void(0)">cookies</a>
+		</footer>
 	</div>
 </body>
 
@@ -168,7 +348,8 @@
 <script src="lib/js/inkDrop.js"></script>
 <script src="lib/js/expandSection.js"></script>
 <script src="lib/js/slideSection.js"></script>
-<script src="lib/js/fadeIn.js"></script>
+<script src="lib/js/fadeScroll.js"></script>
+<script src="lib/js/fadeImgs.js"></script>
 
 <script src="js/index.js"></script>
 </html>

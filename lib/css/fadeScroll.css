@@ -1,4 +1,4 @@
-@keyframes fadeInLeft {
+/*@keyframes fadeInLeft {
 	from {
 		transform: translateX(-100%);
 	}
@@ -8,8 +8,8 @@
 }
 .fade-in-left {
 	animation: fadeInLeft 500ms;
-}
-.fade-in-scroll-top {
+}*/
+.fade-in-scroll {
 	opacity: 0;
 	transform: translateY(-100px);
 	transition: opacity 1000ms, transform 1000ms;

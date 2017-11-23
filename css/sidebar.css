@@ -1,42 +1,45 @@
 #sidebar {
+	--text-color: var(--background-color);
+	--overlay-color: var(--background-color);
 	position: fixed;
 	top: 0;
 	bottom: 0;
 	left: 0;
 	padding: 5% 0;
-	width: var(--sbw);
+	width: var(--unit);
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	overflow-y: auto;
-	background-color: rgb(var(--fg));
-	box-shadow: inset -4px 0 3px -5px rgb(var(--fd)), 2px 0 3px 1px rgba(var(--fg), 0.15);
+	background-color: rgb(var(--foreground-color));
+/*	box-shadow: inset -4px 0 3px -5px rgb(var(--faded-color)), 2px 0 3px 1px rgba(var(--foreground-color), 0.15);*/
+	box-shadow: 2px 0 3px 1px rgba(var(--foreground-color), 0.15);
+	border-right: 0.5px solid rgba(var(--faded-color), 0.15);
 	z-index: 5;
 }
 .sidebar-separator {
-	box-shadow: 0 4px 3px -5px rgb(var(--fd));
+	box-shadow: 0 4px 3px -5px rgb(var(--faded-color));
 }
 .sidebar-button {
 	display: block;
-	width: var(--sbw);
-	height: var(--sbw);
+	width: var(--unit);
+	height: var(--unit);
 	position: relative;
 	overflow: hidden;
 	border-radius: 3px;
 	transition: background-color 400ms;
-	--overlay-color: var(--bg);
 }
 .sidebar-button:hover {
-	background-color: rgba(var(--bg), 0.07);
+	background-color: rgba(var(--overlay-color), 0.07);
 }
-.sidebar-button svg {
+.sidebar-button > svg {
 	display: block;
 	height: 20px;
 	width: 20px;
-	padding: calc((var(--sbw) - 20px) / 2);
-	fill: rgba(var(--fd), 0.5);
+	padding: calc((var(--unit) - 20px) / 2);
+	fill: rgba(var(--text-color), 0.5);
 	transition: fill 400ms;
 }
-.sidebar-button:hover svg {
-	fill: rgb(var(--bg));
+.sidebar-button:hover > svg {
+	fill: rgb(var(--text-color));
 }

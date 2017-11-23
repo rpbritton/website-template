@@ -1,36 +1,36 @@
 html {
-	--sbw: 48px;
-	--fg: 33, 33, 33;
-	--bg: 238, 238, 238;
-	--fd: 224, 224, 224;
+	--unit: 48px;
+	--foreground-color: 33, 33, 33;
+	--background-color: 238, 238, 238;
+	--faded-color: 224, 224, 224;
 	--link-color: 205, 220, 57;
-	--highlight-color: var(--bg);
-	--overlay-color: var(--fg);
-	background-color: rgb(var(--fd));
+	--highlight-color: var(--background-color);
+	--overlay-color: var(--faded-color);
+	--text-color: var(--foreground-color);
+	background-color: rgb(var(--faded-color));
 }
 body {
-	margin: 0 0 0 var(--sbw);
+	margin: 0 0 0 var(--unit);
 	height: 100%;
-	color: rgb(var(--fg));
 }
 *::selection {
 	background-color: rgba(var(--link-color), 0.5);
 }
 h1, h2, h3, h4, h5, h6 {
-	color: rgb(var(--tc));
+	color: rgb(var(--text-color));
 	font-family: 'Josefin Slab', serif;
 }
-p {
-	color: rgb(var(--tc));
+p, ol, ul, span {
+	color: rgb(var(--text-color));
 	font-family: 'Josefin Sans', sans-serif;
 	line-height: 1.5em;
 }
 a {
-	color: rgb(var(--link-color));
-	background-color: rgba(var(--bg), 0);    
-	color: rgb(var(--fg));
+	font-family: 'Josefin Sans', sans-serif;
+	background-color: rgba(var(--link-color), 0);    
+	color: rgb(var(--text-color));
 	transition: color 200ms, background-color 400ms;
-	text-decoration: none;
+/*	text-decoration: none;*/
 	border-radius: 3px;
 	display: inline-block;
 }
@@ -38,15 +38,16 @@ a:hover {
 	background-color: rgba(var(--link-color), 0.3);
 }
 .button {
+	--overlay-color: var(--background-color);
+	--text-color: var(--background-color);
 	font-family: 'Josefin Sans', sans-serif;
 	display: inline-block;
 	padding: 18px 16px;
-	color: rgb(var(--bg));
+	color: rgb(var(--text-color));
 	background-color: rgb(var(--highlight-color));
 	text-decoration: none;
 	border-radius: 3px;
-	box-shadow: 0 2px 3px 1px rgba(var(--fg), 0.15);
-	--overlay-color: var(--bg);
+	box-shadow: 0 2px 3px 1px rgba(var(--foreground-color), 0.15);
 }
 .button:hover {
 	background-color: rgb(var(--highlight-color));
@@ -54,4 +55,13 @@ a:hover {
 img {
 	opacity: 0;
 	transition: opacity 800ms;
+}
+code {
+	color: rgb(var(--text-color));
+	background-color: rgb(var(--faded-color));
+	font-family: 'PT Mono', monospace;
+	font-size: 1em;
+}
+.img-buffer {
+	display: none;
 }
